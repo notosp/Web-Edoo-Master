@@ -1,0 +1,3 @@
+#!/bin/bash
+cd /www
+/usr/bin/python -m SimpleHTTPServer 8000

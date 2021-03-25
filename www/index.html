@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+	<title>Edoo Digital Library</title>
+
+
+    <meta name="author" content="Aksaramaya"/>
+    <meta name="keywords" content="Edoo Digital Library, simple, social, reading, book, app, aksaramaya"/>
+    <meta name="description" content="Read whatever you like with whoever you like."/>
+    <meta property="og:image" content="images/apple-touch-icon-114x114.png"/>
+    <meta property="og:site_name" content="Edoo Digital Library"/>
+    <meta property="og:title" content="Edoo Digital Library | Edoo Digital Library"/>
+    <meta property="og:description" content="Edoo Digital Library, Dapatkan kumpulan eBooks yang terbaik dan nikmati kemudahan membaca dengan fitur yang menyenangkan"/>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!--[if lt IE 9]>$('#bg')
+    .animate({opacity: 0}, 'slow', function() {
+        $(this)
+            .css({'background-image': 'url(1.jpg)'})
+            .animate({opacity: 1});
+    });
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- jQuery -->
+	<script src="javascript/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/grid.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/pop-up.css">
+
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" type="text/css" href="stylesheets/ie.css" />
+	<![endif]-->
+		<style>
+			@-moz-document url-prefix() {
+			.login-form input[type="text"] {
+			  padding: 0px 0px 5px 11px;
+		  height: 2.7em;
+		  border-radius: 2px;
+		  border: none;
+		  font-size: 1em;
+		  outline: none;
+		  margin-bottom: -11px;
+		  box-sizing: border-box;
+		  -moz-box-sizing:border-box;
+		  font-family: 'Open Sans Condensed', sans-serif;
+			}
+			}
+		</style>
+
+
+</head>
+
+<body>
+
+	<!-- Begin Mobile Navigation -->
+	<div id="mobile-nav">
+		<div class="container clearfix">
+			<div>
+
+				<!-- Mobile Nav Button -->
+				<div class="navigationButton sixteen columns clearfix" style="text-align:center">
+					<img id="navIcon" src="" alt="Navigation" width="29" height="17" />
+				</div>
+
+				<!-- Mobile Nav Links -->
+				<div class="navigationContent sixteen columns clearfix">
+					<ul>
+						<li><a href="#section1">BERANDA</a></li>
+						<li><a href="#section2" onclick="ga(‘send’,’pageview’,’/virtual/nav/about’);">SEKILAS</a></li>
+						<li><a href="#section3" onclick="ga(‘send’,’pageview’,’/virtual/nav/feature’);">FITUR</a></li>
+						<li><a href="faq.html" onclick="ga(‘send’,’pageview’,’/virtual/nav/faq’);">BANTUAN</a></li>
+						<li><a onclick="ga(‘send’,’pageview’,’/virtual/download/Hybrid3’);" href="howto.html">CARA PENGGUNAAN</a></li>
+						<li><a href="#section4" onclick="ga(‘send’,’pageview’,’/virtual/nav/contact’);">KONTAK</a></li>
+						<li><a href="http://dashboard.edoo.id/daftar" onclick="ga(‘send’,’pageview’,’/virtual/nav/daftar);">DAFTAR</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- End Mobile Navigation -->
+
+
+	<!-- Begin Header -->
+	<header class="clearfix">
+		<div class="container">
+
+			<!-- Logo -->
+			<div id="logo" class="three columns"><a class="current" href="#section1"><img src="images/logo.png" alt=""></a></div>
+
+			<!-- Navigation -->
+			<nav id="navigation" class="thirteen columns">
+				<ul class="clearfix">
+					<li><a class="current" href="#section1">BERANDA</a></li>
+					<li><a href="#section2" onclick="ga(‘send’,’pageview’,’/virtual/nav/about’);">SEKILAS</a></li>
+					<li><a href="#section3" onclick="ga(‘send’,’pageview’,’/virtual/nav/feature’);">FITUR</a></li>
+					<li><a href="faq.html" onclick="ga(‘send’,’pageview’,’/virtual/nav/faq’);">BANTUAN</a></li>
+					<li><a onclick="ga(‘send’,’pageview’,’/virtual/download/Hybrid3’);" href="howto.html">CARA PENGGUNAAN</a></li>
+					<li><a href="#section4" onclick="ga(‘send’,’pageview’,’/virtual/nav/contact’);">KONTAK</a></li>
+					<li><a href="http://dashboard.edoo.id/daftar" onclick="ga(‘send’,’pageview’,’/virtual/nav/daftar);">DAFTAR</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- End Header -->
+
+	<section id="section1" class="hero container">
+		<!-- hero module position -->
+		<div class="sixteen columns" style="margin-left:0;">
+			<h1 style="font-size:2.4em;display:none">Perpustakaan Digital Edoo Digital Library</h1>
+			<ul class="action sixteen columns">
+				<li class="ijak" style="">Download Sekarang</li>
+				<li style="display:none"><a href="https://itunes.apple.com/us/app/Edoo Digital Library.moco.co.id1145654398?mt=8" target="_blank">
+					<div class="product-thumb-wrapper">
+					<img src="images/icons/apple-download.png" alt="" class="">
+					<img src="images/icons/apple-download-hover.png" alt="" class="other">
+					</div></a>
+				</li>
+				<li><a onclick="ga(‘send’,’pageview’,’/virtual/download/AndroidTop’); " href="https://play.google.com/store/apps/details?id=mam.reader.edoo" target="_blank">
+					<div class="product-thumb-wrapper">
+					<img src="images/icons/android-download.png" alt="" class="">
+					<img src="images/icons/android-download-hover.png" alt="" class="other">
+					</div></a>
+				</li>
+				<li style="display:none"><a onclick="ga(‘send’,’pageview’,’/virtual/download/Desktop’); " id="desktop1" href="#" target="_blank">
+					<div class="product-thumb-wrapper">
+					<img src="images/icons/windows-download.png" alt="" class="">
+					<img src="images/icons/windows-download-hover.png" alt="" class="other">
+					</div></a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- Begin Overview -->
+	<section id="section2" class="overview container">
+		<!-- call module published in top position -->
+		<div class="sixteen columns">
+			<div class="module">
+				<h2>Membaca Semakin Mudah</h2>
+				<p class="sub-heading twelve columns offset-by-four">Baca buku, berbagi koleksi bacaan dan bersosialisasi secara bersamaan. Di mana pun, kapan pun dengan nyaman bersama setiap orang.</p>
+			</div>
+		</div>
+		<!-- call module published in top-a position -->
+		<div class="content-box one-third column">
+			<div class="module">
+				<p><img src="images/icons/design-1.png" alt=""></p>
+				<h3>Berbagi dan Bersosialisasi.</h3>
+				<p>Temukan dan jalin pertemanan. Dapatkan aktifitas kerabatmu.</p>
+			</div>
+		</div>
+		<!-- call module published in top-b position -->
+		<div class="content-box one-third column">
+			<div class="module">
+				<p><img src="images/icons/design-2.png" alt=""></p>
+				<h3>Syarat Pendaftaran Mudah.</h3>
+				<p>Cukup 60 detik untuk bergabung dan merasakan aplikasi Edoo Digital Library.</p>
+			</div>
+		</div>
+		<!-- call module published in top-c position -->
+		<div class="content-box one-third column">
+			<div class="module">
+				<p><img src="images/icons/design-3.png" alt=""></p>
+				<h3>Buat dan Sebarkan Kutipanmu.</h3>
+				<p>Tambah dan bagikan kutipan untuk memotivasi yang lain.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- Begin Static -->
+	<section id="section2" class="static container">
+		<img class="sidephone-small" src="images/sidephone-small.png" alt="">
+		<img class="sidephone-big" src="images/sidephone-big.png" alt="">
+		<!-- Content -->
+		<div class="sixteen columns offset-by-eight wrapper">
+			<h2>Jadilah Pribadi yang Kreatif dan Inovatif</h2>
+			<p>Telusuri dan temukan bacaan yang Kamu inginkan. Jalin pertemanan dan saling berbagi buku yang kamu rekomendasikan.</p>
+			<div class="wrapper_inner">
+			<ul class="static-list " id="inline-popups">
+				<!-- <li><a href="https://itunes.apple.com/US/app/id736026557?mt=8" target="_blank"><img src="images/icons/apple-download.png" alt=""></a></li> -->
+				<li style="display:none"><a href="https://itunes.apple.com/us/app/Edoo Digital Library.moco.co.id1145654398?mt=8" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/apple-download.png" alt="" class="">
+				<img src="images/icons/apple-download-hover.png" alt="" class="other">
+				</div></a>
+				</li>
+				<li><a onclick="ga(‘send’,’pageview’,’/virtual/download/AndroidMid’);" href="https://play.google.com/store/apps/details?id=mam.reader.edoo" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/android-download.png" alt="" class="">
+				<img src="images/icons/android-download-hover.png" alt="" class="other">
+				</div></a>
+				</li>
+				<li style="display:none"><a onclick="ga(‘send’,’pageview’,’/virtual/download/Desktop’); "  id="desktop2" href="#" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/windows-download.png" alt="" class="">
+				<img src="images/icons/windows-download-hover.png" alt="" class="other">
+				</div></a>
+				</li>
+			</ul>
+			</div>
+		</div>
+	</section>
+	<!-- End Static -->
+	<!-- overlay -->
+		<div class="myModal">
+		  <!-- modal -->
+		  <div class="myModal_inner">
+		    <!-- close btn -->
+		    <a href="#" class="myModal_close">X</a>
+		    <div class="myModal_content">
+		      <!-- contents goes here -->
+		    </div>
+		  </div>
+		</div>
+
+		<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+		<script src="javascript/popup-min.js"></script>
+
+	<!--
+	<section id="section14" class="static container">
+		<img class="static-phone" src="images/static-phone.png" alt="">
+		<div class="eight columns">
+			<h2>Tetap Terhubung</h2>
+			<p>Di mana pun kamu berada, Edoo Digital Library selalu hadir untuk menghubungkan dan merekomendasikan buku favoritmu kepada teman dan sahabatmu.</p>
+			<a onclick="ga(‘send’,’pageview’,’/virtual/download/Hybrid3’);" href="" target="_blank" id="dw-desktop2" class="button">Desktop Version<i class="more"></i></a>
+		</div>
+	</section>
+
+	<section id="section4" style="background-color:#f7f7f7;width:100%">
+		<div class="detail">
+			<h2 class="sixteen columns">Desain aplikasi menarik dan menyenangkan</h2>
+			<p class="sub-heading twelve columns sixteen columns">Kami menawarkan berbagai fitur sosial yang dirancang untuk kamu semua <br> terutama yang berjiwa muda. </p>
+
+			<br class="clear">
+
+			<div class="loupe-gallery">
+				<iframe scrolling="no" src="index-iphone.html" frameborder="0" style="" allowfullscreen="" style="overflow: hidden"></iframe>
+				</div>
+		</div>
+	</section>
+	-->
+
+	<!-- Begin Gallery -->
+	<section id="section3" class="gallery container">
+		<h2 class="sixteen columns">Fitur Edoo Digital Library</h2>
+		<p class="sub-heading twelve columns sixteen columns" >Dapatkan kumpulan eBooks yang terbaik dan nikmati kemudahan membaca dengan fitur yang menyenangkan. <br> Jadi tunggu apa lagi, :-)</p>
+		<br class="clear">
+		<!-- Slider -->
+		<!-- <div id="gallery-pager"></div> -->
+		<ul class="gallery-bxslider clearfix">
+			<li>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen1.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen2.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen3.jpg" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen4.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen5.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen6.jpg" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen7.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen8.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen9.jpg" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen10.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen11.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen12.jpg" alt="">
+				</div>
+			</li>
+			<li>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen13.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen14.jpg" alt="">
+				</div>
+				<div class="one-third column screenshot">
+					<img src="images/gallery/screen15.jpg" alt="">
+				</div>
+			</li>
+		</ul>
+
+		<!-- Pager -->
+
+		 <a onclick="ga(‘send’,’pageview’,’/virtual/download/Hybrid3’);" href="howto.html" class="tombol"> Cara menggunakan  <span style="font-weight:bold;">Edoo Digital Library </span></a>
+	</section>
+	<!-- Begin Subscribe -->
+	<section id="section4" class="overview container" style="width:100%;background:#333c3f;text-align: center; padding-top: 19px; border-bottom: none;">
+	<div class=" container" style="padding-top: 0px;">
+		<!-- Content Boxes -->
+		<div class="eight columns">
+		<h3 style="color:white;margin-left:20px;font-weight: 700;">Ada masukan untuk kami?</h3>
+			  <div class="login-form" >
+			    <form method="post" action="https://formspree.io/admin@ijakarta.id"https://formspree.io/admin@ijakarta.id">
+			      <input type="text" name="name"  placeholder="Name" />
+			      <br /><br />
+			      <input type="text" name="email"   placeholder="Email" />
+			      <br /><br />
+			      <textarea  cols="40" rows="10"  placeholder="Feedback" name="message" id="message"></textarea>
+			      <br /><br />
+			      <input type="hidden" name="_subject" value="Edoo Digital Library" />
+			      <input title="Send" type="submit" value="Send" />
+			      <br /><br />
+			    </form>
+			  </div>
+		</div>
+		<div class="eight columns" id="call_me">
+			 <h3 style="color:white;font-weight: 700;" >atau hubungi kami!</h3><br>
+			 <img src="images/logo_white.png" alt="">
+
+			<p style="color:white;" >Edoo Digital Library<br>
+			Perumahan Taman Gandaria Blok D 7 – 8<br> Kebayoran Lama Utara – Jakarta Selatan 12140<br>
+			website: edoo.id<br>   
+email: support@edoo.id</p>
+			<br>
+			<p style="color:white;">Keep in touch with us..</p>
+			<ul class="static-list">
+				<li><a href="https://www.facebook.com/edoo.library" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/facebook-moco.png" alt="" class="">
+				<img src="images/icons/facebook-hover.png" alt="" class="other">
+				</div></a>
+				</li>
+				<li><a href="https://www.twitter.com/edoo_id" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/twitter-moco.png" alt="" class="">
+				<img src="images/icons/twitter-hover.png" alt="" class="other">
+				</div></a></li>
+				<li><a href="http://www.instagram.com/edoo_id" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/instagram.png" alt="" class="">
+				<img src="images/icons/instagram-hover.png" alt="" class="other">
+				</div></a></li>
+				<li><a href="http://aksaramaya.com/" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/world.png" alt="" class="">
+				<img src="images/icons/world-hover.png" alt="" class="other">
+				</div></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</section>
+	<!-- End Subscribe -->
+	<!-- <section style="width:100%;background:#333c3f;text-align: center; padding-top: 19px; border-bottom: none;padding-bottom: 5px;">
+		<div class="container">
+			<ul class="footer-action">
+				<li><a id="top" class="button small" href="#">Back to top<i class="top"></i></a></li>
+			</ul>
+			<p class="copyright">© 2019 Aksaramaya. All Rights Reserved. </p>
+		</div>
+	</section> -->
+
+	<!-- Begin Footer -->
+	<footer>
+		<div style="width:100%;background:#2e3538;padding: 5px;">
+			<div class="container">
+				<ul class="footer-action">
+					<li><a id="top" class="button small" href="#">Back to top<i class="top"></i></a></li>
+				</ul>
+				<p class="copyright">© 2019 Aksaramaya. All Rights Reserved. </p>
+			</div>
+			<!-- <div class="bahasa"><span onclick="location.href='#'"><img src="images/bahasa.png"> Bahasa</span><span onclick="location.href='en/index.html'"><img src="images/english.png"> Language</span></div> -->
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+	<!-- Javascript -->
+	<script src="javascript/libs/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/libs/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/libs/sizzle.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/smoothscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.scrollto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.localscroll.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="javascript/loupe.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="javascript/notifications.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/init.js" type="text/javascript" charset="utf-8"></script>
+
+<script type='text/javascript'>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: 'b83c5f3f-3531-4103-920c-31b76d123d3c', f: true }); done = true; } }; })();</script>
+<script type="text/javascript">
+	if (navigator.appVersion.indexOf("Win")!=-1){
+		var url = 'http://download.aksaramaya.id/Edoo Digital LibrarySetup.exe'
+    }else{
+    	var url = 'http://download.aksaramaya.id/Edoo Digital Library.dmg'
+
+    }
+    document.getElementById('desktop1').href = url;
+    document.getElementById('desktop2').href = url;
+</script>
+<script type="text/javascript">
+	//var bgSlide = ["hero-hardware.png","fanfic1.png","fanfic2.png"];
+    ar bgSlide = ["hero-hardware.png","vp.jpg"];
+	var i = 0;
+
+	setInterval(function(){
+    jQuery('#section1').css({padding:0})
+		    jQuery('#bg-hero')
+		    .animate({opacity: 0}, 'slow', function() {
+		    	jQuery('#con1').css({opacity: 1});
+          if(i > 0){
+		    	  jQuery('.hero').css({background: "#f3f3f4 url(images/bgfanfic.png)"});
+          }
+          else{
+            jQuery('.hero').css({background: "#f3f3f4"});
+          }
+		        jQuery(this)
+		            .css({'background': 'url(images/'+bgSlide[i]+') no-repeat top center'})
+		            .animate({opacity: 1});
+
+		    });
+		        i= i+1;
+		        console.log(i);
+		        if(i == bgSlide.length){
+		        	i = 0;
+		        }
+		},4000);
+</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-51655701-1', 'moco.co.id');
+ga('require', 'displayfeatures');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<title>Edoo Digital Library </title>
+
+
+    <meta name="author" content="Aksaramaya"/>
+    <meta name="keywords" content="Edoo Digital Library, simple, social, reading, book, app, aksaramaya"/>
+    <meta name="description" content="Read whatever you like with whoever you like."/>
+    <meta property="og:image" content="images/apple-touch-icon-114x114.png"/>
+    <meta property="og:site_name" content="Edoo Digital Library"/>
+    <meta property="og:title" content="Edoo Digital Library | Edoo Digital Library "/>
+    <meta property="og:description" content="Edoo Digital Library, Dapatkan kumpulan eBooks yang terbaik dan nikmati kemudahan membaca dengan fitur yang menyenangkan"/>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
+	<!-- jQuery -->
+	<script src="javascript/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/reset.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/grid.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<link rel="stylesheet" href="stylesheets/pop-up.css">
+
+		<style>
+			@-moz-document url-prefix() {
+			.login-form input[type="text"] {
+			  padding: 0px 0px 5px 11px;
+		  height: 2.7em;
+		  border-radius: 2px;
+		  border: none;
+		  font-size: 1em;
+		  outline: none;
+		  margin-bottom: -11px;
+		  box-sizing: border-box;
+		  -moz-box-sizing:border-box;
+		  font-family: 'Open Sans Condensed', sans-serif;
+			}
+			}
+		</style>
+</head>
+
+<body>
+
+	<!-- Begin Mobile Navigation -->
+	<div id="mobile-nav">
+		<div class="container clearfix">
+			<div>
+
+				<!-- Mobile Nav Button -->
+				<div class="navigationButton sixteen columns clearfix" style="text-align:center">
+					<img id="navIcon" src="" alt="Navigation" width="29" height="17" />
+				</div>
+
+				<!-- Mobile Nav Links -->
+				<div class="navigationContent sixteen columns clearfix">
+					<ul>
+						<li><a href="index.html#section1">BERANDA</a></li>
+						<li><a href="index.html#section2" onclick="ga(‘send’,’pageview’,’/virtual/nav/about’);">SEKILAS</a></li>
+						<li><a href="index.html#section3" onclick="ga(‘send’,’pageview’,’/virtual/nav/feature’);">FITUR</a></li>
+						<li><a href="faq.html" onclick="ga(‘send’,’pageview’,’/virtual/nav/faq’);">BANTUAN</a></li>
+						<li><a onclick="ga(‘send’,’pageview’,’/virtual/download/Hybrid3’);" href="howto.html">CARA PENGGUNAAN</a></li>
+						<li><a href="index.html#section4" onclick="ga(‘send’,’pageview’,’/virtual/nav/contact’);">KONTAK</a></li>
+						<li><a href="http://dashboard.edoo.id/daftar" onclick="ga(‘send’,’pageview’,’/virtual/nav/daftar);">DAFTAR</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	<!-- End Mobile Navigation -->
+
+
+	<!-- Begin Header -->
+	<header class="clearfix">
+		<div class="container">
+
+			<!-- Logo -->
+			<div id="logo" class="three columns"><img src="images/logo.png" alt=""></div>
+
+			<!-- Navigation -->
+			<nav id="navigation" class="thirteen columns">
+				<ul class="clearfix">
+					<li><a href="index.html#section1">BERANDA</a></li>
+					<li><a href="index.html#section2" onclick="ga(‘send’,’pageview’,’/virtual/nav/about’);">SEKILAS</a></li>
+					<li><a href="index.html#section3" onclick="ga(‘send’,’pageview’,’/virtual/nav/feature’);">FITUR</a></li>
+					<li><a href="faq.html" onclick="ga(‘send’,’pageview’,’/virtual/nav/faq’);">BANTUAN</a></li>
+					<li><a class="current" onclick="ga(‘send’,’pageview’,’/virtual/download/Hybrid3’);" href="howto.html">CARA PENGGUNAAN</a></li>
+					<li><a href="#section4" onclick="ga(‘send’,’pageview’,’/virtual/nav/contact’);">KONTAK</a></li>
+					<li><a href="http://dashboard.edoo.id/daftar" onclick="ga(‘send’,’pageview’,’/virtual/nav/daftar);">DAFTAR</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+
+	<!-- Begin Detail -->
+	<!-- <object type="text/html" data="index-faq.html"> -->
+	<section id="section2" class="overview container">
+		<!-- <iframe scrolling="no" src="index-faq.html" frameborder="0" style="" allowfullscreen="" style="overflow: hidden;width:100%;height:100%;"></iframe>  -->
+		<object type="text/html" data="index-howto.html" style="width:100%;min-height:800px;margin-top: 50px;"></object>
+	</section>
+	<!-- End Detail -->
+
+	<section id="section4" class="overview container" style="width:100%;background:#333c3f;text-align: center; padding-top: 19px; border-bottom: none;">
+	<div class=" container" style="padding-top: 0px;">
+		<!-- Content Boxes -->
+		<div class="eight columns">
+		<h3 style="color:white;margin-left:20px;font-weight: 700;">Ada masukan untuk kami?</h3>
+			  <div class="login-form" >
+			    <form method="post" action="https://formspree.io/admin@ijakarta.id">
+			      <input type="text" name="name"  placeholder="Name" />
+			      <br /><br />
+			      <input type="text" name="email"   placeholder="Email" />
+			      <br /><br />
+			      <textarea  cols="40" rows="10"  placeholder="Feedback" name="message" id="message"></textarea>
+			      <br /><br />
+			      <input type="hidden" name="_subject" value="Edoo Digital Library" />
+			      <input title="Send" type="submit" value="Send" />
+			      <br /><br />
+			    </form>
+			  </div>
+		</div>
+		<div class="eight columns" id="call_me">
+			 <h3 style="color:white;font-weight: 700;" >atau hubungi kami!</h3><br>
+			 <img src="images/logo_white.png" alt="">
+
+			<p style="color:white;" >Edoo Digital Library<br>
+			Perumahan Taman Gandaria Blok D 7 – 8<br> Kebayoran Lama Utara – Jakarta Selatan 12140<br>
+			website: edoo.id<br>   
+email: support@edoo.id</p>
+			<br>
+			<p style="color:white;">Keep in touch with us..</p>
+			<ul class="static-list">
+				<li><a href="https://www.facebook.com/edoo.library" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/facebook-moco.png" alt="" class="">
+				<img src="images/icons/facebook-hover.png" alt="" class="other">
+				</div></a>
+				</li>
+				<li><a href="https://www.twitter.com/edoo_id" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/twitter-moco.png" alt="" class="">
+				<img src="images/icons/twitter-hover.png" alt="" class="other">
+				</div></a></li>
+				<li><a href="http://www.instagram.com/edoo_id" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/instagram.png" alt="" class="">
+				<img src="images/icons/instagram-hover.png" alt="" class="other">
+				</div></a></li>
+				<li><a href="http://aksaramaya.com/" target="_blank">
+				<div class="product-thumb-wrapper">
+				<img src="images/icons/world.png" alt="" class="">
+				<img src="images/icons/world-hover.png" alt="" class="other">
+				</div></a></li>
+			</ul>
+		</div>
+		</div>
+
+	</section>
+	<!-- End Subscribe -->
+	<!-- <section style="width:100%;background:#333c3f;text-align: center; padding-top: 19px; border-bottom: none;padding-bottom: 5px;">
+		<div class="container">
+			<ul class="footer-action">
+				<li><a id="top" class="button small" href="#">Back to top<i class="top"></i></a></li>
+			</ul>
+			<p class="copyright">© 2019 Aksaramaya. All Rights Reserved. </p>
+		</div>
+	</section> -->
+
+	<!-- Begin Footer -->
+	<footer>
+		<div style="width:100%;background:#2e3538;padding: 5px;">
+			<div class="container">
+				<ul class="footer-action">
+					<li><a id="top" class="button small" href="#">Back to top<i class="top"></i></a></li>
+				</ul>
+				<p class="copyright">© 2019 Aksaramaya. All Rights Reserved. </p>
+			</div>
+			<!-- <div class="bahasa"><span onclick="location.href='#'"><img src="images/bahasa.png"> Bahasa</span><span onclick="location.href='en/index.html'"><img src="images/english.png"> Language</span></div> -->
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+
+	<!-- Javascript -->
+	<script src="javascript/libs/prototype.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/libs/scriptaculous.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/libs/sizzle.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/smoothscroll.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.easing.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.scrollto.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.localscroll.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/jquery.bxslider.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/waypoints.min.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="javascript/loupe.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="javascript/notifications.js" type="text/javascript" charset="utf-8"></script>
+	<script src="javascript/init.js" type="text/javascript" charset="utf-8"></script>
+
+<script type='text/javascript'>(function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://widget.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({ c: 'b83c5f3f-3531-4103-920c-31b76d123d3c', f: true }); done = true; } }; })();</script>
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-51655701-1', 'moco.co.id');
+ga('require', 'displayfeatures');
+ga('require', 'linkid', 'linkid.js');
+ga('send', 'pageview');
+
+</script>
+</body>
+
+</html>

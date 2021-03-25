@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Dinas Perpustakaan dan Kearsipan Kabupaten Ngawi </title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/grid.css">
+</head>
+        <style>
+      .transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, h1, ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*html {*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+ /* perspective: 900;
+  overflow-y: scroll;
+  background-color: #fff;
+  font: normal 15px "Roboto", arial, sans-serif;
+  color: rgba(48, 69, 92, 0.8);
+}
+*/
+/*body {
+  min-height: 0;
+  display: inline-block;
+  position: relative;*/
+  /*left: 50%;*/
+  /*margin: 0px 0;*/
+  /*transform: translate(-50%, 0);*/
+  /*box-shadow: 0 10px 0 0 #ff6873 inset;*/
+  /*background-color: #fefffa;*/
+  /*max-width: 450px;*/
+  /*padding: 30px;*/
+  /*font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+}*/
+body { 
+  background: #fff;
+  color: #777;
+  font: normal 14px "Roboto", arial, sans-serif;
+  font-weight: 100;
+  overflow-x: hidden;
+  display: inline-block;
+  padding: 30px;
+  line-height: 20px;
+}
+@media (max-width: 550px) {
+  body {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
+h1, h2 {
+  color: #E05858;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  cursor:pointer;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  /*background-color: #fefffa;*/
+  margin: 0;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+p {
+  /*color: rgba(48, 69, 92, 0.8);
+  font-size: 14px;
+  line-height: 16px;*/
+  letter-spacing: 1px;
+  /*position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: 100;*/
+}
+ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+ul li:nth-of-type(1) {animation-delay: 0.5s;}
+ul li:nth-of-type(2) {animation-delay: 0.75s;}
+ul li:nth-of-type(3) {animation-delay: 1s;}
+ul li:nth-of-type(4) {animation-delay: 0.5s;}
+ul li:nth-of-type(5) {animation-delay: 0.75s;}
+ul li:nth-of-type(6) {animation-delay: 1s;}
+ul li:nth-of-type(7) {animation-delay: 0.5s;}
+ul li:nth-of-type(8) {animation-delay: 0.75s;}
+ul li:nth-of-type(9) {animation-delay: 1s;}
+ul li:nth-of-type(10) {animation-delay: 0.5s;}
+ul li:nth-of-type(11) {animation-delay: 0.75s;}
+ul li:nth-of-type(12) {animation-delay: 1s;}
+ul li:nth-of-type(13) {animation-delay: 0.5s;}
+ul li:nth-of-type(14) {animation-delay: 0.75s;}
+ul li:nth-of-type(15) {animation-delay: 1s;}
+ul li:nth-of-type(16) {animation-delay: 0.5s;}
+ul li:nth-of-type(17) {animation-delay: 0.75s;}
+ul li:nth-of-type(18) {animation-delay: 1s;}
+ul li:nth-of-type(19) {animation-delay: 0.5s;}
+ul li:nth-of-type(20) {animation-delay: 0.75s;}
+ul li:nth-of-type(21) {animation-delay: 1s;}
+ul li:nth-of-type(22) {animation-delay: 0.5s;}
+ul li:nth-of-type(23) {animation-delay: 0.75s;}
+ul li:nth-of-type(24) {animation-delay: 1s;}
+ul li:nth-of-type(25) {animation-delay: 0.5s;}
+ul li:nth-of-type(26) {animation-delay: 0.75s;}
+ul li:nth-of-type(27) {animation-delay: 1s;}
+
+ul li:last-of-type {
+  padding-bottom: 0;
+}
+ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #E05858;
+  width: 3px;
+  height: 9px;
+}
+ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+  -webkit-transform: translate(-2px, 0) rotate(45deg);
+  -moz-transform: translate(-2px, 0) rotate(45deg);
+  -o-transform: translate(-2px, 0) rotate(45deg);
+  -ms-transform: translate(-2px, 0) rotate(45deg);
+}
+ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+  -webkit-transform: translate(2px, 0) rotate(-45deg);
+  -moz-transform: translate(2px, 0) rotate(-45deg);
+  -o-transform: translate(2px, 0) rotate(-45deg);
+  -ms-transform: translate(2px, 0) rotate(-45deg);
+}
+ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+  -webkit-transform: translate(2px, 0) rotate(45deg);
+  -moz-transform: translate(2px, 0) rotate(45deg);
+  -o-transform: translate(2px, 0) rotate(45deg);
+  -ms-transform: translate(2px, 0) rotate(45deg);
+}
+ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+  -webkit-transform: translate(-2px, 0) rotate(-45deg);
+  -moz-transform: translate(-2px, 0) rotate(-45deg);
+  -o-transform: translate(-2px, 0) rotate(-45deg);
+  -ms-transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+
+/* =Responsive
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 959px) {
+
+}
+/* Tablet Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+}
+
+/* Smaller than 960px */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  h2{font-size: 18px;}
+  h1{font-size: 20px;}
+}
+
+span {margin-left: 20px;}
+
+    </style>
+<body>
+  <ul>
+	<h1 id="b1">+ General</h1>
+    <ul id="det1" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. What is Jokowi Digital Library?</h2>
+        <p>Jokowi Digital Library is a digital library application equipped with eReader to read eBook and social media feature, initiated by National Library of Indonesia, in cooperation with PT.Woolu Akasara Maya (Aksaramaya) as the application developer.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. What is ePustaka?</h2>
+        <p>ePustaka is a digital library which contains thousands of eBook collections that can be borrowed and read online or offline through variety of operating systems and devices such as smartphone, tablet, and desktop/laptop.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. What are the requirements to borrow eBook in Jokowi Digital Library?</h2>
+        <p>Requirement to borrow eBook in Jokowi Digital Library, you need to have:
+          <br><span>&ndash;An android or iOS smartphone, desktop or laptop</span>
+          <br><span>&ndash;Internet</span>
+          <br><span>&ndash;MRegister to become a member of ePustaka Jokowi Digital Library via Jokowi Digital Library application.</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. What are the regulations/rules to borrow eBook in Jokowi Digital Library?</h2>
+        <p>Regulations/rules to borrow eBook in Jokowi Digital Library are:
+          <br><span>&ndash;One-year membership period and can be renewed automatically</span>
+          <br><span>&ndash;As long as still remain being a member of ePustaka Jokowi Digital Library, free to borrow any available eBook.</span>
+          <br><span>&ndash;The borrowed eBook can only be read for 7 calendar days.</span>
+          <br><span>&ndash;If the eBook is unavailable due to other user is borrowing it, will be inputted into waiting list and can borrow it once the other user has met the end of borrowing period.</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. What is eReader?</h2>
+        <p>eeReader is an application to read eBook with ePub or PDF format developed by Aksaramaya equipped with various features to read such as:
+
+          <br><span>&ndash;Change the background color of eBook pages, </span>
+          <br><span>&ndash;View table of content,  </span>
+          <br><span>&ndash;Change font type and kind, </span>
+          <br><span>&ndash;Set font size, </span>
+          <br><span>&ndash;Give bookmark, </span>
+          <br><span>&ndash;Copy few words to post them to social media,atau</span>
+          <br><span>&ndash;Recommend ebook to other users, </span>
+          <br><span>&ndash;Find words/phrase in eBook,</span>
+          <br><span>&ndash;Adjust lighting when reading the eBook.</span>
+          <br><span>&ndash;Make notes</span>
+        </p>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Where can I download Jokowi Digital Library?</h2>
+        <p>You can download it in Play Store for Android, Appstore for iOS with keyword “Jokowi Digital Library” and you can also download it via www.Jokowi Digital Library.moco.co.id website for hybrid format that is accessible using PC/laptop.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. How much is the price for Jokowi Digital Library application?</h2>
+        <p>Jokowi Digital Library is free of charge.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. How much is the cost to become ePustaka member?</h2>
+        <p>To become ePustaka member in Jokowi Digital Library is free of charge, not even a single rupiah will be charge, it’s free.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Why should I use Jokowi Digital Library ?</h2>
+        <p> Jokowi Digital Library users can make friends, interact and recommend the interesting books to each other. User can also read a variety of books in one application, which is easy, practical and fast, anytime and anywhere. Through Jokowi Digital Library, user/reader can also interact with the author.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>j. Does Jokowi Digital Library have website that can be visited?</h2>
+        <p>Yes, of course. You can visit Jokowi Digital Library.moco.co.id website and if you want to know the collection of books, you can also visit Jokowi Digital Library.moco.co.id website</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>k. Can I borrow the books via Jokowi Digital Library.moco.co.id website?</h2>
+        <p>No. You can’t borrow books from Jokowi Digital Library website. You have to use Jokowi Digital Library application to borrow books.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>l. Can I read the book that I have obtained directly in Jokowi Digital Library.moco.co.id website?</h2>
+        <p>No. We do not provide the feature to read books in the website. The books can only be read via Jokowi Digital Library application.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>m. What is feed?</h2>
+        <p>Feed is a collection of public information. Information included in feed is:
+          <br><span>&ndash;When followers add books</span>
+          <br><span>&ndash;When followers join ePustaka</span>
+          <br><span>&ndash;When there is any changes in User Badges Status </span>
+          <br><span>&ndash;When new books are added in the followed ePustaka </span>
+          <br><span>&ndash;When books are available to be borrowed</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>n. How do I change my username in Jokowi Digital Library?</h2>
+        <p>Go to profile page, click pen-shaped-icon. From there you can change your username.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>o. What is badge status?</h2>
+        <p>Badge status is user’s read-level. There are several read-level in Jokowi Digital Library which are Newbie, Bookworm, and Socializer.
+        <br>If the user wants to up the level, the user shall meet several requirements.
+          <br>
+          <br><b>Newbie to Bookworm</b>
+          <br><span>&ndash;Complete Profile</span>
+          <br><span>&ndash;Posted > 5 Comments</span>
+          <br><span>&ndash;Download 10 books to shelf</span>
+          <br><span>&ndash;Open/Read 5 Books</span>
+          <br>
+          <br><b>Bookworm to Socializer</b>
+          <br><span>&ndash;Follow 10 People</span>
+          <br><span>&ndash;Share 10 Times</span>
+          <br><span>&ndash;Recommend 5 Books</span>
+          <br><span>&ndash;Get 10 Followers</span>
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>p. What is current, want and history?</h2>
+        <p><b>Current</b> is the collections of books that are already owned. On Current, user can delete the collections of books that may not wanted to be read anymore, to delete the collections of books is really easy only by using the info button in current page.
+        <br><b>Want</b> is the collections of books that are desired by user but have not got the opportunity to borrow it yet
+        <br><b>History</b> is the collections of books that have finished with percentage of book finish reach 100%. On history, user can also delete collections of books that have finished. </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>q. Are the books that we have obtained can be reviewed or commented?</h2>
+        <p>Yes. If you want to review your book, you need to go to book details page, in right side of tab you will find tab labeled comment. That is where you can review or comment on other user’s review.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>r. How do I change my password in Jokowi Digital Library?</h2>
+        <p>To change your password in Jokowi Digital Library, You need to go to profile menu and click pen-shaped-icon. Select/tap on password column. Then new page for edit password will be opened. In the edit password page, you will be asked to input your old password. Then input the new password and in password confirmation column, input the new password again, and click save button.</p>
+      </li>
+    </ul>
+  <h1 id="b2">+ Getting Started</h1>
+    <ul id="det2"  style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. How to register in Jokowi Digital Library?</h2>
+        <p>Before login to Jokowi Digital Library, you need to have Jokowi Digital Library account first. Do the following:
+          <br><span>1. Username  : Full name</span>
+          <br><span>2. Email     : Email address, as your user name to Login</span>
+          <br><span>3. Password : Password to login into the application</span>
+          <br><span>4. Confirm Password : repeat the same password</span>
+          <br><span>5. Sign up :To send your registration</span>
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. How to start Jokowi Digital Library?</h2>
+        <p>To start it, you need to login through login menu. Do the following:
+          <br><span>1. Input email address</span>
+          <br><span>2. Input password</span>
+          <br><span>3. Select Sign in button</span>
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. How do I download books in Jokowi Digital Library application?</h2>
+        <p>To obtain the books, you need to open book details page. After that, click Get Book button then options will be shown whether you want to purchase, rent, or borrow it. After you select your option and finish the transaction, the selected book will be downloaded automatically.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Apakah buku yang telah saya unduh akan hilang ketika saya keluar dari Jokowi Digital Library?</h2>
+        <p>Tidak. Untuk buku yang Anda sudah miliki akan tersimpan di dalam server kami.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Will the downloaded books be gone after I log out from Jokowi Digital Library?</h2>
+        <p> No. For books that you already borrowed will be stored in our server.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. What method can I use to read digital books in Jokowi Digital Library?</h2>
+        <p>You can borrow it.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. How do I borrow eBook in Jokowi Digital Library?</h2>
+        <p>When you are in book details page. Click Get Book/Borrow button. You will be asked to input the same password with password that you use to login to Jokowi Digital Library. After you successfully input your password, the books that you borrow will be downloaded automatically.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. How many books can I store in Jokowi Digital Library?</h2>
+        <p>As many as you can borrow</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. How can I join ePustaka?</h2>
+        <p>To join epustaka, you can click  button. After joining, you can read all books available in ePustaka by borrowing them</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>j. How can I view notifications that I received?</h2>
+        <p> To view NOTIFICATION is quite easy. You only need to click the bell icon/symbol in main page/dashboard.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>k. How do I find friends in Jokowi Digital Library?</h2>
+        <p>Go to book details page then open “is reading” and “has read” tab. In that tab you will find other users. Please select the user in the tab by clicking the picture. After that you will go to profile page consisting user information (username, badges status, description, wishlist, follower list, following list, and reading list and also follow button). This follow button is used to follow other users.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>l. Can I send message via Jokowi Digital Library?</h2>
+        <p>Yes. You can use inbox feature; inbox is a feature to have conversation with other users. To start conversation with other user for the first time, can be perform by going to user profile of the user to have conversation with, click chat button () on the upper right side of User Profile, it will bring you to chat page.</p>
+      </li>
+    </ul>
+  <h1 id="b3">+ Compatibility</h1>
+    <ul id="det3"  style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. What do I need to use Jokowi Digital Library?</h2>
+        <p>You can use your smartphone, tablet or computer.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Will I get different experience when using mobile device and desktop?</h2>
+        <p>You will get different display and different reading experience.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. What minimum requirements should I meet to be able to use Jokowi Digital Library?</h2>
+        <p>If you use OS Android device, the minimum version is OS 4 and need 1 GB RAM. For PC/laptop, minimum is OS windows 7 and 1GB RAM.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d.  What languages are supported by Jokowi Digital Library?</h2>
+        <p> Bahasa Indonesia and English</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Is reading via Jokowi Digital Library will drain my device’s battery?</h2>
+        <p>No. Because this application does not require much power</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Are free collections of books available in Jokowi Digital Library?</h2>
+        <p>Yes</p>
+      </li>
+    </ul>
+  <h1 id="b4">+ Text Reader</h1>
+    <ul id="det4" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Can I change the display in Jokowi Digital Library Reader?</h2>
+        <p>Yes you can. In ePub format, there are three displays; white, sepia and night.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b.  Is there mode for reading during the day in Jokowi Digital Library Reader?</h2>
+        <p>Yes. In ePub format, you only need to increase the brightness in your reader.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. What features are available in Jokowi Digital Library Reader?</h2>
+        <p>Theme, TOC, Bookmark, Style Font, Line & Space, Search, Quote, Share.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d.Can Jokowi Digital Library work offline?</h2>
+        <p> Yes. You need to login first before using Jokowi Digital Library and the books that you want to read must already have been downloaded. After that, you can read the books offline.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. How do I start to read books in Jokowi Digital Library?</h2>
+        <p>By swiping right from main page, you will see SHELF page and there are CURRENT, WANT and HISTORY in that page. You can read the books by clicking on the cover of the books that you want to read.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f.What is Bookmark?</h2>
+        <p>To mark book pages.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. How do I view my table of content?</h2>
+        <p>AYou only need to click  icon in your Jokowi Digital Library reader.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. Can I change the text size in Jokowi Digital Library reader?</h2>
+        <p>Yes you can, by clicking  icon in your Jokowi Digital Library reader (for ePub version).</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Do I always need to re-download the books that I have read earlier in Jokowi Digital Library?</h2>
+        <p>Yes. If your account is used in other devices.</p>
+      </li>
+    </ul>
+  <h1 id="b5">+ Troubleshooting</h1>
+    <ul id="det5" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. What should I do if the book that I have borrowed is missing and I need to borrow it again?</h2>
+        <p>No. You only need to re-download the missing books without purchasing them again.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. How do I get my password if I forget it?</h2>
+        <p>Using this feature is quite easy, you will only be asked to input the registered email in Jokowi Digital Library. Then there will be email from noreply@aksaramaya.com contains how to reset the password.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Where can I get Jokowi Digital Library assistance and technical support?</h2>
+        <p>You can contact our support team directly send email to support@Jokowi Digital Library.moco.co.id</p>
+      </li>
+    </ul>
+  <script src="../javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#b1").click(function(){
+          $("#det1").toggle('slow');
+      });
+      $("#b2").click(function(){
+          $("#det2").toggle('slow');
+      });
+      $("#b3").click(function(){
+          $("#det3").toggle('slow');
+      });
+      $("#b4").click(function(){
+          $("#det4").toggle('slow');
+      });
+      $("#b5").click(function(){
+          $("#det5").toggle('slow');
+      });
+    })
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-51655701-1', 'moco.co.id');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>

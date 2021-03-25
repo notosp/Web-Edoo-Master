@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	<meta charset="utf-8">
+	<title>Dinas Perpustakaan dan Kearsipan Kabupaten Ngawi </title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/grid.css">
+</head>
+        <style>
+      .transition, p, ul li i:before, ul li i:after {
+  transition: all 0.25s ease-in-out;
+}
+
+.flipIn, h1, ul li {
+  animation: flipdown 0.5s ease both;
+}
+
+.no-select, h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/*html {*/
+  /*width: 100%;*/
+  /*height: 100%;*/
+ /* perspective: 900;
+  overflow-y: scroll;
+  background-color: #fff;
+  font: normal 15px "Roboto", arial, sans-serif;
+  color: rgba(48, 69, 92, 0.8);
+}
+*/
+/*body {
+  min-height: 0;
+  display: inline-block;
+  position: relative;*/
+  /*left: 50%;*/
+  /*margin: 0px 0;*/
+  /*transform: translate(-50%, 0);*/
+  /*box-shadow: 0 10px 0 0 #ff6873 inset;*/
+  /*background-color: #fefffa;*/
+  /*max-width: 450px;*/
+  /*padding: 30px;*/
+  /*font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+}*/
+body { 
+  background: #fff;
+  color: #777;
+  font: normal 14px "Roboto", arial, sans-serif;
+  font-weight: 100;
+  overflow-x: hidden;
+  display: inline-block;
+  padding: 30px;
+  line-height: 20px;
+}
+@media (max-width: 550px) {
+  body {
+    box-sizing: border-box;
+    transform: translate(0, 0);
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    left: 0;
+  }
+}
+
+h1, h2 {
+  color: #06C9B8;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  cursor:pointer;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  display: block;
+  /*background-color: #fefffa;*/
+  margin: 0;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+p {
+  /*color: rgba(48, 69, 92, 0.8);
+  font-size: 14px;
+  line-height: 16px;*/
+  letter-spacing: 1px;
+  /*position: relative;
+  overflow: hidden;
+  max-height: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  margin-top: 14px;
+  z-index: 2;
+  font-weight: 100;*/
+}
+ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 4px;
+  padding-top: 18px;
+  border-top: 1px dotted #dce7eb;
+}
+ul li:nth-of-type(1) {animation-delay: 0.5s;}
+ul li:nth-of-type(2) {animation-delay: 0.75s;}
+ul li:nth-of-type(3) {animation-delay: 1s;}
+ul li:nth-of-type(4) {animation-delay: 0.5s;}
+ul li:nth-of-type(5) {animation-delay: 0.75s;}
+ul li:nth-of-type(6) {animation-delay: 1s;}
+ul li:nth-of-type(7) {animation-delay: 0.5s;}
+ul li:nth-of-type(8) {animation-delay: 0.75s;}
+ul li:nth-of-type(9) {animation-delay: 1s;}
+ul li:nth-of-type(10) {animation-delay: 0.5s;}
+ul li:nth-of-type(11) {animation-delay: 0.75s;}
+ul li:nth-of-type(12) {animation-delay: 1s;}
+ul li:nth-of-type(13) {animation-delay: 0.5s;}
+ul li:nth-of-type(14) {animation-delay: 0.75s;}
+ul li:nth-of-type(15) {animation-delay: 1s;}
+ul li:nth-of-type(16) {animation-delay: 0.5s;}
+ul li:nth-of-type(17) {animation-delay: 0.75s;}
+ul li:nth-of-type(18) {animation-delay: 1s;}
+ul li:nth-of-type(19) {animation-delay: 0.5s;}
+ul li:nth-of-type(20) {animation-delay: 0.75s;}
+ul li:nth-of-type(21) {animation-delay: 1s;}
+ul li:nth-of-type(22) {animation-delay: 0.5s;}
+ul li:nth-of-type(23) {animation-delay: 0.75s;}
+ul li:nth-of-type(24) {animation-delay: 1s;}
+ul li:nth-of-type(25) {animation-delay: 0.5s;}
+ul li:nth-of-type(26) {animation-delay: 0.75s;}
+ul li:nth-of-type(27) {animation-delay: 1s;}
+
+ul li:last-of-type {
+  padding-bottom: 0;
+}
+ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 16px;
+  right: 0;
+}
+ul li i:before, ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #06C9B8;
+  width: 3px;
+  height: 9px;
+}
+ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+  -webkit-transform: translate(-2px, 0) rotate(45deg);
+  -moz-transform: translate(-2px, 0) rotate(45deg);
+  -o-transform: translate(-2px, 0) rotate(45deg);
+  -ms-transform: translate(-2px, 0) rotate(45deg);
+}
+ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+  -webkit-transform: translate(2px, 0) rotate(-45deg);
+  -moz-transform: translate(2px, 0) rotate(-45deg);
+  -o-transform: translate(2px, 0) rotate(-45deg);
+  -ms-transform: translate(2px, 0) rotate(-45deg);
+}
+ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+ul li input[type=checkbox]:checked ~ p {
+  margin-top: 0;
+  max-height: 0;
+  opacity: 0;
+  transform: translate(0, 50%);
+}
+ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+  -webkit-transform: translate(2px, 0) rotate(45deg);
+  -moz-transform: translate(2px, 0) rotate(45deg);
+  -o-transform: translate(2px, 0) rotate(45deg);
+  -ms-transform: translate(2px, 0) rotate(45deg);
+}
+ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+  -webkit-transform: translate(-2px, 0) rotate(-45deg);
+  -moz-transform: translate(-2px, 0) rotate(-45deg);
+  -o-transform: translate(-2px, 0) rotate(-45deg);
+  -ms-transform: translate(-2px, 0) rotate(-45deg);
+}
+
+@keyframes flipdown {
+  0% {
+    opacity: 0;
+    transform-origin: top center;
+    transform: rotateX(-90deg);
+  }
+  5% {
+    opacity: 1;
+  }
+  80% {
+    transform: rotateX(8deg);
+  }
+  83% {
+    transform: rotateX(6deg);
+  }
+  92% {
+    transform: rotateX(-3deg);
+  }
+  100% {
+    transform-origin: top center;
+    transform: rotateX(0deg);
+  }
+}
+
+/* =Responsive
+-------------------------------------------------------------- */
+
+@media only screen and (min-width: 959px) {
+
+}
+/* Tablet Landscape */
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+}
+
+/* Smaller than 960px */
+@media only screen and (max-width: 959px) {
+
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+  h2{font-size: 18px;}
+  h1{font-size: 20px;}
+}
+
+span {margin-left: 20px;}
+
+    </style>
+<body>
+  <ul>
+	<h1 id="b1">+ Umum</h1>
+    <ul id="det1" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apakah itu aplikasi EDOO?</h2>
+        <p>EDOO adalah aplikasi edukasi digital untuk mengakses beragam informasi seperti berita, artikel, audio dan video terkait pendidikan serta berbagai e-book dengan kategori pendidikan penunjang belajar maupun edukasi secara umum yang dapat diunduh, dipinjam dan dibaca secara gratis di mana saja dan kapan saja serta fitur media sosial yang dikembangkan untuk memberikan pengalaman belajar dan membaca bagi para siswa yang lebih mudah dan menyenangkan.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Mengapa harus menggunakan aplikasi EDOO?</h2>
+        <p>Pengguna EDOO dapat mengakses beragam e-book edukasi sesuai dengan jenjang kelas dan pilihan sekolah masing-masing. Pengguna juga dapat saling berteman, berinteraksi serta merekomendasikan buku serta mengakses berbagai berita edukasi dalam tautan berita, audio, dan video dalam satu aplikasi di mana saja dan kapan saja.</p>
+      </li>
+      <li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Konten apa saja yang ada di dalam aplikasi EDOO?</h2>
+        <p>Di dalam aplikasi EDOO berisi konten digital dalam beragam format yaitu berita, e-book, audio, dan video.</p>
+      </li>
+      <li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Dimana saya bisa mengunduh aplikasi EDOO?</h2>
+        <p>Untuk saat ini, Anda dapat mengunduh di Play Store untuk Android.</p>
+      </li>
+      <li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Berapakah biaya aplikasi EDOO?</h2>
+        <p>Untuk mengunduh aplikasi EDOO serta mengakses konten di dalamnya gratis, tidak berbayar.</p>
+      </li>
+      <li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Berapa biaya menjadi anggota ePustaka?</h2>
+        <p>Untuk menjadi anggota ePustaka yang ada di aplikasi EDOO tidak dipungut biaya/gratis.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. Bagaimana syarat, ketentuan serta aturan untuk pinjam e-book di aplikasi EDOO?</h2>
+        <p>Syarat untuk meminjam eBook di Edoo Library, Anda harus punya:
+          <br><span>&ndash;Menggunakan smartphone berbasis Android</span>
+          <br><span>&ndash;Ada jaringan Internet.</span>
+          <br><span>&ndash;E-book yang dipinjam hanya dapat dibaca dalam jangka waktu tertentu. Untuk e-book rekomendasi kelas/sekolah yang merupakan buku wajib, jangka waktu akan ditentukan sepanjang pengguna menjadi siswa di kelas tersebut.</span>
+          <br><span>&ndash;Untuk e-book non buku wajib dapat dipinjam dengan jangka waktu tertentu (misal 3 hari)</span>
+          <br><span>&ndash;Apabila e-book habis dipinjam maka masuk dalam daftar antri dan bisa meminjam apabila ada pengguna lain yang telah selesai masa pinjamnya (koleksi DRM).</span>
+          <br><span>&ndash;E-book yang free content dapat dipinjam tanpa batasan waktu.</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. Bagaimana syarat, ketentuan serta aturan untuk pinjam audio di aplikasi EDOO?</h2>
+        <p>Syarat, ketentuan serta aturan untuk meminjam audio di aplikasi EDOO adalah sebagai berikut:
+          <br><span>&ndash;Menggunakan smartphone berbasis Android.</span>
+          <br><span>&ndash;Ada jaringan Internet.</span>
+          <br><span>&ndash;Audio yang dipinjam hanya dapat dibaca dalam jangka waktu tertentu, seperti 3 hari atau 7 hari (koleksi DRM).</span>
+          <br><span>&ndash;Free content audio dapat dipinjam tanpa batasan waktu.</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Bagaimana syarat, ketentuan serta aturan untuk pinjam video di aplikasi EDOO?</h2>
+        <p>Syarat, ketentuan serta aturan untuk meminjam video di aplikasi EDOO adalah sebagai berikut: 
+          <br><span>&ndash;Menggunakan smartphone berbasis Android</span>
+          <br><span>&ndash;Ada jaringan Internet.</span>
+          <br><span>&ndash;Video yang dipinjam hanya dapat dibaca dalam jangka waktu tertentu, seperti 3 hari atau 7 hari.</span>
+          <br><span>&ndash;Free content video dapat dipinjam </span>
+        </p>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>j. Bagaimana cara mengganti nama dan foto pengguna di aplikasi EDOO?</h2>
+        <p>Masuk ke halaman profil, lalu tekan icon berbentuk pulpen. Dari situ Anda bisa mengganti nama dan foto pengguna.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>k. Apakah itu Pinjaman, Berbagi, Ulasan, Antrian dan Riwayat?</h2>
+        <p>
+          <br><span>&ndash;<b>Pinjaman</b>: koleksi (buku, audio,video) yang sedang dipinjam dan diakses. </span>
+          <br><span>&ndash;<b>Antrian</b>: koleksi yang diinginkan oleh pengguna tetapi belum melakukan peminjaman karena jumlah copy sudah tidak tersedia</span>
+          <br><span>&ndash;<b>Riwayat</b>: koleksi yang sudah selesai dipinjam dan diakses. (status 100%)</span>
+          <br><span>&ndash;<b>Berbagi</b>: koleksi donasi pengguna</span>
+        </p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>l. Apakah buku-buku yang kita telah dapatkan bisa direview atau diberikan komentar?</h2>
+        <p>Bisa. Jika Anda ingin mereview buku Anda harus membuka detail buku yang ingin Anda review. Pada bagian book detail terdapat tab bertuliskan Review/Ulasan. Disitulah Anda dapat memberikan ulasan/review dan serta memberikan rating terhadap buku yang Anda baca.</p>
+      </li>
+       <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>m. Bagaimana cara mengganti kata sandi/password di aplikasi EDOO?</h2>
+        <p>Untuk mengganti kata sandi/password di aplikasi EDOO, Anda harus masuk ke menu PROFIL kemudian klik menu “Ubah Profil”. Kemudian pilih kolom Password. Anda akan diarahkan ke layar baru untuk memasukkan kata sandi lama dan masukkan kata sandi terbaru. Ulangi kata sandi baru kemudian tekan tombol Perbaharui.</p>
+      </li>
+    </ul>
+  <h1 id="b2">+ Memulai Aplikasi</h1>
+    <ul id="det2"  style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Bagaimana cara mendaftar sebagai pengguna di aplikasi EDOO?</h2>
+        <p>Untuk mendaftar sebagai pengguna aplikasi EDOO, Anda dapat menghubungkan dengan akun Google atau Facebook. Berikan izin aplikasi untuk mengakses akun Google atau Facebook Anda. Anda juga dapat mendaftar secara manual dengan memasukkan alamat e-mail. Setelah itu, Anda akan mendapatkan kode unik untuk melengkapi proses pendaftaran. Setelah itu, nama aplikasi akan mengikuti nama sekolah yang sudah terdaftar.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Bagaimana cara memulai aplikasi EDOO?</h2>
+        <p>Untuk memulai Anda terlebih dahulu masuk halaman home screen. Caranya adalah berikut :
+          <br><span>1. Tekan tombol “Masuk”</span>
+          <br><span>2. Masukkan alamat email yang Anda daftarkan</span>
+          <br><span>3. Masukkan kata sandi dengan benar</span>
+        </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Bagaimana cara saya mendapatkan (meminjam dan membaca) e-book di aplikasi EDOO?</h2>
+        <p>Untuk meminjam dan membaca e-book, Anda harus membuka halaman detail buku. Setelah itu Anda menekan tombol Pinjam. Anda akan diarahkan untuk memilih salah satu ePustaka yang memiliki buku tersebut. Pilih ePustaka, lalu Anda diminta untuk mengunduh buku tersebut. Tunggu beberapa saat hingga proses unduh selesai. Setelah proses unduh selesai, Anda dapat membaca e-book tersebut</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Bagaimana cara saya mendapatkan (meminjam dan mendengarkan) koleksi audio di aplikasi EDOO?</h2>
+        <p>Untuk mendengarkan koleksi audio, Anda harus membuka halaman detail audio. Setelah itu Anda menekan tombol Pinjam. Anda akan diarahkan untuk memilih salah satu ePustaka yang memiliki audio tersebut. Pilih ePustaka, lalu Anda diminta untuk mengunduh audio tersebut. Tunggu beberapa saat hingga proses unduh selesai. Setelah proses unduh selesai, Anda dapat mendengarkan audio tersebut.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Bagaimana cara saya mendapatkan (meminjam dan menonton) koleksi video di aplikasi EDOO?</h2>
+        <p>Untuk meminjam dan menonton koleksi video, Anda harus membuka halaman detail video yang ingin Anda tonton. Setelah itu Anda menekan tombol Pinjam. Anda akan diarahkan untuk memilih salah satu ePustaka yang memiliki video tersebut. Pilih ePustaka, lalu Anda diminta untuk mengunduh video tersebut. Tunggu beberapa saat hingga proses unduh selesai. Setelah proses unduh selesai, Anda dapat menonton video tersebut.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Bagaimana cara saya mengakses berita di aplikasi EDOO?</h2>
+        <p>Untuk membaca berita, cukup dengan memilih judul berita yang ingin Anda baca. Setelah Anda menekan judul berita, Anda akan diarahkan ke laman yang menyediakan berita tersebut dan Anda dapat membaca berita secara lengkap tanpa keluar dari aplikasi</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. Apakah koleksi (e-book, audio, video) yang telah saya unduh akan hilang ketika saya keluar dari aplikasi EDOO?</h2>
+        <p>Tidak. Untuk koleksi yang Anda sudah miliki akan tersimpan di dalam server.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>h. Apakah saya bisa mengakses koleksi yang telah saya unduh melalui aplikasi lain?</h2>
+        <p>Tidak. Untuk koleksi yang diunduh dari aplikasi EDOO hanya dapat dibaca di aplikasi EDOO saja.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Cara apa saja yang dapat saya gunakan untuk mengakses koleksi digital di aplikasi EDOO?</h2>
+        <p>Anda dapat meminjam/borrow </p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>j. Berapa banyak koleksi yang dapat saya simpan di aplikasi EDOO?</h2>
+        <p>Sebanyak yang bisa Anda pinjam.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>k. Bagaimana saya bisa melihat notifikasi yang telah saya dapatkan?</h2>
+        <p>Untuk melihat <b>NOTIFIKASI</b> cukup mudah. Anda hanya diminta menekan icon/simbol lonceng yang ada di halaman utama/dashboard.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>l. Bagaimana caranya kita untuk mencari teman di aplikasi EDOO?</h2>
+        <p>Masuk kedalam detail koleksi (e-book, audio, video) kemudian buka icon <b>kacamata atau tekan menu “Telah dibaca” untuk e-book, “Telah diputar” untuk audio, “Telah diputar” untuk video</b>. Tekan icon dan menu tersebut maka Anda akan menemukan daftar pengguna lain yang mengakses koleksi tersebut. Silakan pilih pengguna yang ada didalam daftar tersebut dengan cara menekan tampilan foto atau nama pengguna. Setelah itu Anda akan masuk ke halaman profile yang terdiri dari informasi pengguna (nama, foto profil, daftar pengikut dan mengikuti, tombol “IKUTI”, riwayat peminjaman koleksi serta aktivitas pengguna). Nah, tombol IKUTI inilah yang digunakan untuk mengikuti pengguna lain.</p>
+      </li>
+    </ul>
+  <h1 id="b5">+ Berbagi</h1>
+    <ul id="det5" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apa yang dimaksud dengan fitur BERBAGI di aplikasi EDOO?</h2>
+        <p>Fitur BERBAGI adalah sebuah fitur yang memberikan kesempatan kepada Anda dan pengguna lain untuk berpartisipasi dalam menambah jumlah copy dari koleksi yang ada di aplikasi EDOO sehingga pengguna lain memiliki kesempatan yang lebih besar untuk mengakses koleksi yang ada.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Bagaimana saya dapat menggunakan fitur BERBAGI ini?</h2>
+        <p>Anda dapat menggunakan fitur ini dengan mendonasikan koleksi yang ada di dalam aplikasi. Pilih koleksi yang Anda ingin bagikan (e-book, audio, dan video). Kemudian tentukan jumlah copy yang Anda ingin bagikan. Lalu bayar sesuai dengan jumlah Total Bayar yang tertera dalam aplikasi.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Koleksi apa saja yang dapat saya donasikan?</h2>
+        <p>Seluruh koleksi e-book, audio, dan video yang termasuk dalam jenis koleksi DRM atau dengan jumlah copy yang terbatas.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Bagaimana cara pembayaran koleksi yang ingin saya donasikan?</h2>
+        <p>Anda dapat melakukan pembayaran dengan berbagai pilihan yang tersedia di dalam aplikasi yang dapat Anda pilih seperti, virtual account, kartu kredit, atau payment channel yang akan disediakan dikemudian hari</p>
+      </li>
+    </ul>
+  <h1 id="b4">+ Kompatibilitas</h1>
+    <ul id="det4"  style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apa yang saya perlukan untuk menggunakan aplikasi EDOO?</h2>
+        <p>Anda dapat menggunakan smartphone berbasis Android.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Persyaratan minimum apakah yang harus saya penuhi agar dapat menggunakan aplikasi EDOO?</h2>
+        <p>Jika Anda menggunakan perangkat OS Android minimum versi OS 4 dan RAM 1 GB.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Bahasa apa saja yang di dukung oleh aplikasi EDOO?</h2>
+        <p>Bahasa Indonesia.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Apakah membaca menggunakan aplikasi EDOO menguras baterai device saya?</h2>
+        <p>Tidak. Karena aplikasi ini tidak membutuh daya banyak</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Apakah koleksi yang tersedia di aplikasi EDOO berbayar?</h2>
+        <p>Seluruh koleksi (e-book, audio, video) di aplikasi EDOO dapat dipinjam secara gratis.</p>
+      </li>
+    </ul>
+  <h1 id="b5">+ Alat Pembaca</h1>
+    <ul id="det5" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Apakah tampilan membaca di Reader aplikasi EDOO dapat diubah?</h2>
+        <p>Untuk ebook dengan format PDF, tampilan reader tidak bisa diubah.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Apakah Reader aplikasi EDOO terdapat mode untuk membaca siang hari?</h2>
+        <p>Untuk format PDF, Anda dapat mengganti latar belakang.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>c. Fitur apa saja yang terdapat di reader aplikasi EDOO?</h2>
+        <p>Untuk format PDF terdapat Latar, TOC (daftar halaman), Bookmark (penanda halaman), search (pencarian kata), penanda kalimat/kata berupa yang dapat dipilih: highlight, underline, strikeout, dan squiggly, mode baca yang dapat dipilih: slide, scroll, dan curl.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>d. Apakah aplikasi EDOO bisa bekerja secara offline?</h2>
+        <p>Bisa. Syaratnya Anda harus login terlebih dahulu sebelum menggunakan aplikasi EDOO dan buku yang Anda ingin baca sudah harus terunduh. Setelah itu, Anda dapat membaca buku secara offline.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>e. Apakah itu Bookmark?</h2>
+        <p>Untuk menandai halaman buku.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>f. Bagaimana melihat daftar isi yang saya punya?</h2>
+        <p>Anda cukup menekan icon  pada reader aplikasi EDOO Anda.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>g. Dapatkah saya merubah ukuran text di reader aplikasi EDOO?</h2>
+        <p>Untuk format PDF, ukuran text tidak dapat diubah.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>i. Apakah saya harus selalu mengunduh kembali buku yang sudah saya baca sebelumnya di aplikasi EDOO?</h2>
+        <p>Betul. Jika Anda login menggunakan device/perangkat yang berbeda.</p>
+      </li>
+    </ul>
+  <h1 id="b6">+ Mengatasi Masalah</h1>
+    <ul id="det6" style="display:none">
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>a. Bagaimana cara mendapatkan kembali kata kunci apabila saya lupa?</h2>
+        <p>Cukup mudah menggunakan fitur ini, Anda hanya diminta untuk memasukkan email yang sudah terdaftar pada aplikasi EDOO. Setelah itu akan ada email dari noreply@edoo.id yang berisi tentang reset password.</p>
+      </li>
+      <li>
+        <input type="checkbox" checked>
+        <i></i>
+        <h2>b. Dimanakah saya bisa mendapatkan dukungan dan bantuan teknis Edoo?</h2>
+        <p>Anda dapat menghubungi tim support kami langsung dengan mengirimkan email ke alamat support@edoo.id</p>
+      </li>
+    </ul>
+  <script src="javascript/jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $("#b1").click(function(){
+          $("#det1").toggle('slow');
+      });
+      $("#b2").click(function(){
+          $("#det2").toggle('slow');
+      });
+      $("#b3").click(function(){
+          $("#det3").toggle('slow');
+      });
+      $("#b4").click(function(){
+          $("#det4").toggle('slow');
+      });
+      $("#b5").click(function(){
+          $("#det5").toggle('slow');
+      });
+      $("#b6").click(function(){
+          $("#det6").toggle('slow');
+      });
+    })
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-51655701-1', 'moco.co.id');
+  ga('require', 'displayfeatures');
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+
+  </script>
+</body>
+
+</html>
